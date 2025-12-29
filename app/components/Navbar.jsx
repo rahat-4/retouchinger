@@ -1,11 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
-
 import { assets } from "@/assets/assets";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScrolling, setIsScrolling] = useState(false);
-
   const sideMenuRef = useRef();
 
   const openMenu = () => {
@@ -17,14 +15,16 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (scrollY > 50) {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
         setIsScrolling(true);
       } else {
         setIsScrolling(false);
       }
-    });
-  });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -32,116 +32,159 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
       <nav
-        className={`w-full fixed flex justify-between items-center py-4 px-5 lg:px-8 xl:px-[8%] z-50 ${
+        className={`w-full fixed flex justify-between items-center px-5 lg:px-8 xl:px-[8%] z-50 transition-all duration-300 ${
           isScrolling
-            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+            ? "bg-white/80 backdrop-blur-lg shadow-lg dark:bg-gray-900/80 dark:shadow-white/10"
             : ""
         }`}
       >
-        <a href="#top">
+        <a href="#top" className="flex items-center">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt="logo"
-            className="w-28 cursor-pointer mr-14"
+            className="w-40 lg:w-48 cursor-pointer"
           />
         </a>
+
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+          className={`hidden md:flex items-center gap-8 lg:gap-10 rounded-full px-8 py-3.5 font-medium ${
             isScrolling
               ? ""
-              : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+              : "bg-white/70 shadow-lg backdrop-blur-sm dark:bg-gray-800/70 dark:border dark:border-white/20"
           }`}
         >
           <li>
-            <a href="#top" className="font-ovo">
+            <a
+              href="#top"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="font-ovo">
-              About me
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="font-ovo">
+            <a
+              href="#services"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
               Services
             </a>
           </li>
           <li>
-            <a href="#work" className="font-ovo">
-              My Work
+            <a
+              href="#work"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              Our Work
             </a>
           </li>
           <li>
-            <a href="#contact" className="font-ovo">
-              Contact me
+            <a
+              href="#about"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              Contact
             </a>
           </li>
         </ul>
 
         <div className="flex items-center gap-4">
-          <button onClick={() => setIsDarkMode(!isDarkMode)}>
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
-              alt="."
+              alt="Theme toggle"
               className="w-6"
             />
           </button>
-          <a
-            href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50"
+
+          <button
+            onClick={openMenu}
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           >
-            Contact{" "}
-            <Image
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
-              alt="contact"
-              className="w-3"
-            />
-          </a>
-          <button className="block md:hidden ml-3" onClick={openMenu}>
-            <Image
-              src={isDarkMode ? assets.menu_white : assets.menu_black}
-              alt="."
-              className="w-6"
-            />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </button>
         </div>
 
-        {/* ------------- mobile menu -------------- */}
+        {/* Mobile menu */}
         <ul
           ref={sideMenuRef}
-          className="md:hidden flex flex-col gap-4 py-20 px-10 bg-rose-50 fixed top-0 bottom-0 -right-64 w-64 h-screen z-50 transition duration-500 dark:bg-darkHover dark:text-white"
+          className="md:hidden flex flex-col gap-6 py-20 px-10 bg-white fixed top-0 bottom-0 -right-64 w-64 h-screen z-50 transition duration-500 shadow-2xl dark:bg-gray-900 dark:text-white"
         >
-          <div className="absolute right-6 top-6" onClick={closeMenu}>
+          <div
+            className="absolute right-6 top-6 cursor-pointer"
+            onClick={closeMenu}
+          >
             <Image
               src={isDarkMode ? assets.close_white : assets.close_black}
-              alt="."
+              alt="Close"
               className="w-5"
             />
           </div>
           <li>
-            <a href="#top" className="font-ovo" onClick={closeMenu}>
+            <a
+              href="#top"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="font-ovo" onClick={closeMenu}>
-              About me
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="font-ovo" onClick={closeMenu}>
+            <a
+              href="#services"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
               Services
             </a>
           </li>
           <li>
-            <a href="#work" className="font-ovo" onClick={closeMenu}>
-              My Work
+            <a
+              href="#work"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
+              Our Work
             </a>
           </li>
           <li>
-            <a href="#contact" className="font-ovo" onClick={closeMenu}>
-              Contact me
+            <a
+              href="#about"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
+              Contact
             </a>
           </li>
         </ul>

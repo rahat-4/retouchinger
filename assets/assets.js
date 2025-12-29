@@ -36,8 +36,20 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import image_one from "./image_1.jpg";
+import img_one from "./img_one.jpg";
+import img_two from "./img_two.jpg";
+import img_three from "./img_three.jpg";
+import img_four from "./img_four.jpg";
+import img_five from "./img_five.jpg";
+import soft_icon from "./soft_icon.png";
 
 export const assets = {
+  soft_icon,
+  img_one,
+  img_two,
+  img_three,
+  img_four,
+  img_five,
   image_one,
   user_image,
   code_icon,
@@ -104,35 +116,35 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Full-Stack Web Development",
-    description:
-      "I develop dynamic, responsive, and scalable web applications using Django, React, and Next.js.",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
     title: "Custom Software Solutions",
     description:
       "Need a business management system, an e-commerce platform, or a data-driven web app? I design and build software tailored to your needs.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "API Development & Integration",
+    icon: assets.web_icon,
+    title: "Web App Design & Development",
     description:
       "I create secure and efficient APIs using Django REST Framework and integrate third-party services for seamless functionality.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Database Design & Optimization",
+    icon: assets.mobile_icon,
+    title: "Mobile App Development",
     description:
       "Efficient SQL database management ensures your application runs smoothly with high performance.",
     link: "",
   },
   {
     icon: assets.graphics_icon,
-    title: "Consultation & Code Review",
+    title: "Photo Editing Services",
+    description:
+      "I develop dynamic, responsive, and scalable web applications using Django, React, and Next.js.",
+    link: "",
+  },
+  {
+    icon: assets.graphics_icon,
+    title: "Quality Assurance & Testing",
     description:
       "I provide technical guidance, best practices, and code reviews to improve software quality.",
     link: "",

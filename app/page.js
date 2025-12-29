@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import WhatWeOffer from "./components/Offer";
+import OurClients from "./components/Clients";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
@@ -38,9 +40,11 @@ export default function Home() {
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Services isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Work isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <WhatWeOffer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <OurClients isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     </>
