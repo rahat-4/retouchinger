@@ -42,7 +42,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt="logo"
-            className="w-40 lg:w-48 cursor-pointer"
+            className="h-20 w-auto lg:h-32 cursor-pointer"
+            priority
           />
         </a>
 
@@ -98,12 +99,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <div className="flex items-center gap-4">
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           >
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt="Theme toggle"
-              className="w-6"
+              className="h-6 w-6"
             />
           </button>
 

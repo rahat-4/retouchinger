@@ -42,7 +42,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Changeable Text */}
@@ -105,31 +105,6 @@ const Header = () => {
                 creativity. 🚀
               </motion.p>
             </div>
-
-            {/* CTA Buttons */}
-            {/* <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-              <motion.a
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                href="#contact"
-                className="px-8 py-3 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent hover:bg-gray-800 transition-colors w-full sm:w-auto justify-center"
-              >
-                Get In Touch
-                <Image src={assets.right_arrow_white} alt="" className="w-4" />
-              </motion.a>
-              <motion.a
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                href="/resume-of-rahat.pdf"
-                download
-                className="px-8 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center"
-              >
-                Our Portfolio
-                <Image src={assets.download_icon} alt="" className="w-4" />
-              </motion.a>
-            </div> */}
           </motion.div>
 
           {/* Right Column - Carousel Images */}
@@ -165,7 +140,7 @@ const Header = () => {
               </div>
 
               {/* Carousel Indicators */}
-              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
+              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 pb-2">
                 {carouselImages.map((_, index) => (
                   <button
                     key={index}
