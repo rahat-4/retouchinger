@@ -118,35 +118,49 @@ export const serviceData = [
     icon: assets.web_icon,
     title: "Custom Software Solutions",
     description:
-      "Need a business management system, an e-commerce platform, or a data-driven web app? I design and build software tailored to your needs.",
+      "I design and build custom software solutions such as business management systems, dashboards, and data-driven applications tailored to your specific needs.",
     link: "",
   },
   {
     icon: assets.web_icon,
     title: "Web App Design & Development",
     description:
-      "I create secure and efficient APIs using Django REST Framework and integrate third-party services for seamless functionality.",
+      "I develop modern, responsive, and scalable web applications using technologies like React, Next.js, and Django, focused on performance and user experience.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
     title: "Mobile App Development",
     description:
-      "Efficient SQL database management ensures your application runs smoothly with high performance.",
+      "I create high-performance mobile applications with clean UI and smooth user experience, ensuring reliability, scalability, and security.",
     link: "",
   },
+  {
+    icon: assets.ai_icon ?? assets.web_icon,
+    title: "AI Agents & Chatbots",
+    description:
+      "I build intelligent AI agents and chatbots for customer support, lead generation, and internal automation using modern AI and NLP technologies.",
+    link: "",
+  },
+  {
+    icon: assets.automation_icon ?? assets.web_icon,
+    title: "Automation Tools & Workflows",
+    description:
+      "I develop automation tools to streamline business processes, reduce manual work, and improve efficiency using APIs, AI, and custom scripts.",
+    link: "",
+  },
+  // {
+  //   icon: assets.graphics_icon,
+  //   title: "Quality Assurance & Testing",
+  //   description:
+  //     "I ensure software reliability through testing, debugging, performance optimization, and code reviews to deliver high-quality applications.",
+  //   link: "",
+  // },
   {
     icon: assets.graphics_icon,
     title: "Photo Editing Services",
     description:
       "I develop dynamic, responsive, and scalable web applications using Django, React, and Next.js.",
-    link: "",
-  },
-  {
-    icon: assets.graphics_icon,
-    title: "Quality Assurance & Testing",
-    description:
-      "I provide technical guidance, best practices, and code reviews to improve software quality.",
     link: "",
   },
 ];
