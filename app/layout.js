@@ -12,8 +12,14 @@ const getOvo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio - Mainul Islam Rahat",
-  description: "Mainul Islam Rahat's portfolio",
+  title: "Retouchinger - Software Development Agency",
+  description:
+    "Retouchinger is a Software Engineering & Development company specializing in full-stack web development, delivering high-quality solutions to help businesses grow with technology.",
+  icons: {
+    icon: "/r-icon.png",
+    shortcut: "/r-icon.png",
+    apple: "/r-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
