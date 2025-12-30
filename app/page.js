@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import WhatWeOffer from "./components/Offer";
 import OurClients from "./components/Clients";
+import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
@@ -45,6 +46,7 @@ export default function Home() {
       <WhatWeOffer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <OurClients isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Technologies isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     </>

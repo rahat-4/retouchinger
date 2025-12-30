@@ -164,59 +164,6 @@ const About = ({ isDarkMode }) => {
           ))}
         </div>
       </motion.div>
-
-      {/* Company Highlights */}
-      <motion.ul
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="grid grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto gap-6 mb-16"
-      >
-        {infoList.map(({ icon, iconDark, title, description }, index) => (
-          <motion.li
-            whileHover={{ scale: 1.05, y: -5 }}
-            key={index}
-            className="border-2 border-gray-200 dark:border-gray-700 rounded-2xl p-8 cursor-pointer hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 duration-500 bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-900"
-          >
-            <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-4">
-              <Image
-                src={isDarkMode ? iconDark : icon}
-                alt={title}
-                className="w-7"
-              />
-            </div>
-            <h3 className="my-4 font-bold text-lg text-gray-800 dark:text-white font-ovo">
-              {title}
-            </h3>
-            <p className="text-gray-600 text-sm dark:text-gray-300 leading-6 font-ovo">
-              {description}
-            </p>
-          </motion.li>
-        ))}
-      </motion.ul>
-
-      {/* Tools Section */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
-        className="text-center"
-      >
-        <h4 className="mb-8 text-2xl font-bold text-gray-800 dark:text-white font-ovo">
-          Tools We Use
-        </h4>
-        <ul className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 max-w-3xl mx-auto">
-          {toolsData.map((tool, index) => (
-            <motion.li
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              key={index}
-              className="flex items-center justify-center w-16 sm:w-20 aspect-square border-2 border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 duration-500 bg-white dark:bg-gray-800"
-            >
-              <Image src={tool} alt="Tool" className="w-8 sm:w-10" />
-            </motion.li>
-          ))}
-        </ul>
-      </motion.div>
     </motion.div>
   );
 };
