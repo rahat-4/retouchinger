@@ -86,17 +86,24 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               About Us
             </a>
           </li>
-          <li>
-            <a
-              href="#contact"
-              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            >
-              Contact
-            </a>
-          </li>
         </ul>
 
         <div className="flex items-center gap-4">
+          <a
+            href="#contact"
+            className="
+              px-4 py-2 text-sm
+              sm:px-5 sm:py-2.5 sm:text-base
+              lg:px-6
+              bg-gradient-to-r from-blue-600 to-purple-600
+              text-white rounded-full font-ovo font-medium
+              hover:shadow-lg hover:scale-105
+              transition-all duration-300
+            "
+          >
+            Get In Touch
+          </a>
+
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -177,15 +184,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               onClick={closeMenu}
             >
               About Us
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              onClick={closeMenu}
-            >
-              Contact
             </a>
           </li>
         </ul>
