@@ -177,7 +177,7 @@ const Contact = () => {
             Email
           </h4>
           <p className="text-sm text-gray-600 dark:text-gray-300 font-ovo">
-            contact@company.com
+            info@retouchinger.com
           </p>
         </div>
 
@@ -228,11 +228,196 @@ const Contact = () => {
             </svg>
           </div>
           <h4 className="font-semibold text-gray-800 dark:text-white mb-2 font-ovo">
-            Location
+            Locations
           </h4>
           <p className="text-sm text-gray-600 dark:text-gray-300 font-ovo">
-            Dhaka, Bangladesh
+            USA & Bangladesh
           </p>
+        </div>
+      </motion.div>
+
+      {/* Office Locations with Maps - Combined Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1.7 }}
+        className="mt-20"
+      >
+        <h3 className="text-center text-3xl sm:text-4xl font-bold font-ovo mb-4">
+          Visit Our Offices
+        </h3>
+        <p className="text-center text-gray-600 dark:text-gray-300 font-ovo mb-12 max-w-2xl mx-auto">
+          We have offices in two locations to serve you better. Drop by or reach
+          out to discuss your project.
+        </p>
+
+        <div className="space-y-10 max-w-6xl mx-auto">
+          {/* USA Office Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1.8 }}
+            className="grid grid-cols-1 lg:grid-cols-5 gap-6 bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden"
+          >
+            {/* Address Card */}
+            <div className="lg:col-span-2 p-8 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <svg
+                    className="w-7 h-7 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span className="text-2xl mb-2 block">🇺🇸</span>
+                  <h4 className="text-2xl font-bold text-gray-800 dark:text-white font-ovo">
+                    USA Office
+                  </h4>
+                </div>
+              </div>
+              <address className="not-italic text-gray-700 dark:text-gray-300 font-ovo leading-relaxed mb-6">
+                <p className="font-semibold mb-2">Los Angeles, California</p>
+                <p>204 S Juanita Ave</p>
+                <p>Los Angeles, 3-104</p>
+                <p>CA 90004, United States</p>
+              </address>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=204+S+Juanita+Ave,+Los+Angeles,+CA+90004"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-full font-medium font-ovo transition-all shadow-md hover:shadow-lg"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
+                </svg>
+                Get Directions
+              </a>
+            </div>
+
+            {/* Map */}
+            <div className="lg:col-span-3 h-96 lg:h-auto">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.945978!2d-118.31234!3d34.07701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c0c19e3a8e07%3A0x1234567890abcdef!2s204%20S%20Juanita%20Ave%2C%20Los%20Angeles%2C%20CA%2090004!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="USA Office Location"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </motion.div>
+
+          {/* Bangladesh Office Section */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 2.0 }}
+            className="grid grid-cols-1 lg:grid-cols-5 gap-6 bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden"
+          >
+            {/* Map */}
+            <div className="lg:col-span-3 h-96 lg:h-auto order-2 lg:order-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.367893012345!2d90.42!3d23.7465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9b0123456789%3A0xabcdef1234567890!2sBasabo%2C%20Dhaka%201214!5e0!3m2!1sen!2sbd!4v1621234567890!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Bangladesh Office Location"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+
+            {/* Address Card */}
+            <div className="lg:col-span-2 p-8 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 order-1 lg:order-2">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <svg
+                    className="w-7 h-7 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span className="text-2xl mb-2 block">🇧🇩</span>
+                  <h4 className="text-2xl font-bold text-gray-800 dark:text-white font-ovo">
+                    Bangladesh Office
+                  </h4>
+                </div>
+              </div>
+              <address className="not-italic text-gray-700 dark:text-gray-300 font-ovo leading-relaxed mb-6">
+                <p className="font-semibold mb-2">Dhaka, Bangladesh</p>
+                <p>House: 17, Road: 3/2, Block: D</p>
+                <p>Haq Residential Society</p>
+                <p>Basabo, Dhaka-1214</p>
+                <p>Bangladesh</p>
+              </address>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=House+17,+Road+3/2,+Block+D,+Haq+Residential+Society,+Basabo,+Dhaka+1214"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-full font-medium font-ovo transition-all shadow-md hover:shadow-lg"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
+                </svg>
+                Get Directions
+              </a>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </motion.div>
