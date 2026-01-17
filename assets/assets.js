@@ -95,50 +95,50 @@ export const workData = [
     title: "QOP CRM",
     description:
       "A secure web-based portal for managing mortgage enquiries and applications through the One Mortgage System platform.",
-    bgImage: "/qopcrm.png",
+    bgImage: "/work/qopcrm.png",
     link: "https://qopcrm.com",
   },
   {
     title: "Afrobeutic",
     description: "Salon management System that connects clients with salons.",
-    bgImage: "/afrobeutic.png",
+    bgImage: "/work/afrobeutic.png",
     link: "https://afrobeutic-frontend.vercel.app/",
   },
   {
     title: "Chefbot CRM",
     description:
       "Restaurant management platform that handle automatic booking with AI Agent.",
-    bgImage: "/chefbot.png",
+    bgImage: "/work/chefbot.png",
     link: "https://crm.chef-bot.de/",
   },
   {
     title: "Supplers",
     description: "Multi vendor e-commerce platform for furniture.",
-    bgImage: "/supplers.png",
+    bgImage: "/work/supplers.png",
     link: "https://www.supplers.com/",
   },
   {
     title: "Cardicheck",
     description: "Telemedicine platform for cardiology patients.",
-    bgImage: "/cardicheck.png",
+    bgImage: "/work/cardicheck.png",
     link: "https://cardicheck.vercel.app/en",
   },
   {
     title: "Pharmik",
     description: "Pharmacy management system for local pharmacies.",
-    bgImage: "/pharmik.png",
+    bgImage: "/work/pharmik.png",
     link: "https://www.pharmik.co/",
   },
   {
     title: "ProHr",
     description: "HR management system for small and medium businesses.",
-    bgImage: "/prohr.png",
+    bgImage: "/work/prohr.png",
     link: "https://www.prohr.io/",
   },
   {
     title: "Sebagriho",
     description: "Healthcare management system for clinics and hospitals.",
-    bgImage: "/sebagriho.png",
+    bgImage: "/work/sebagriho.png",
     link: "https://www.sebagriho.com/",
   },
 ];
