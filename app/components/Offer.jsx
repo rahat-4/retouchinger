@@ -8,29 +8,43 @@ const WhatWeOffer = ({ isDarkMode }) => {
       title: "Web Development",
       description:
         "Custom web applications built with modern technologies like React, Next.js, and Django. We create scalable, performant solutions tailored to your business needs.",
-      image: "/images/web-dev.jpg", // Replace with your actual image path
+      image: "/whatweoffer/web.jpeg",
       features: ["Responsive Design", "SEO Optimized", "Fast Performance"],
     },
     {
       title: "Mobile Development",
       description:
         "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android platforms with cutting-edge technologies.",
-      image: "/images/mobile-dev.jpg", // Replace with your actual image path
+      image: "/whatweoffer/mobileapp.jpeg",
       features: ["iOS & Android", "Cross-Platform", "Native Performance"],
     },
     {
-      title: "Cloud Solutions",
+      title: "AI Solutions",
       description:
-        "Scalable cloud infrastructure and deployment solutions using AWS, Google Cloud, and Azure to ensure your applications run smoothly and efficiently.",
-      image: "/images/cloud.jpg", // Replace with your actual image path
-      features: ["Auto Scaling", "High Availability", "Cost Optimized"],
+        "Intelligent automation and AI-powered solutions including chatbots, agents, and machine learning models to streamline your business processes.",
+      image: "/whatweoffer/ai.jpeg",
+      features: ["AI Agents", "Chatbots", "Machine Learning"],
     },
     {
-      title: "UI/UX Design",
+      title: "Software Development",
       description:
-        "Beautiful, intuitive designs that put users first. We create engaging interfaces that drive conversion and provide seamless user experiences.",
-      image: "/images/design.jpg", // Replace with your actual image path
-      features: ["User Research", "Prototyping", "User Testing"],
+        "Custom software solutions and enterprise applications designed to solve complex business challenges with scalable, maintainable code.",
+      image: "/whatweoffer/software.jpeg",
+      features: ["Custom Solutions", "Enterprise Apps", "API Integration"],
+    },
+    {
+      title: "Automation Services",
+      description:
+        "Streamline your workflows with intelligent automation tools and scripts that reduce manual work and increase efficiency across your organization.",
+      image: "/whatweoffer/automation.jpeg",
+      features: ["Workflow Automation", "Process Optimization", "Integration"],
+    },
+    {
+      title: "Photo Editing",
+      description:
+        "Professional photo editing and retouching services for businesses and individuals, delivering high-quality results for all your image needs.",
+      image: "/whatweoffer/photo-edit.jpeg",
+      features: ["Retouching", "Color Correction", "Background Removal"],
     },
   ];
 
@@ -116,25 +130,12 @@ const WhatWeOffer = ({ isDarkMode }) => {
                 className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}
               >
                 <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                  {/* Placeholder gradient background */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 opacity-20"></div>
-
-                  {/* Replace this div with actual Image component when you have images */}
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl">
-                    {index === 0 && "💻"}
-                    {index === 1 && "📱"}
-                    {index === 2 && "☁️"}
-                    {index === 3 && "🎨"}
-                  </div>
-
-                  {/* Uncomment when you have actual images:
                   <Image
                     src={offer.image}
                     alt={offer.title}
                     fill
                     className="object-cover"
                   />
-                  */}
                 </div>
 
                 {/* Decorative Elements */}
