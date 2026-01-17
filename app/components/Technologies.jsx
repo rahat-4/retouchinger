@@ -57,7 +57,7 @@ const Technologies = () => {
                            hover:scale-110 transition-transform duration-300"
               >
                 <div
-                  className="w-full h-full bg-white dark:bg-gray-800 rounded-2xl shadow-lg
+                  className="relative w-full h-full bg-white dark:bg-gray-800 rounded-2xl shadow-lg
                              flex items-center justify-center p-4 border-2
                              border-gray-100 dark:border-gray-700
                              hover:border-blue-500 dark:hover:border-blue-400
@@ -67,7 +67,8 @@ const Technologies = () => {
                   <Image
                     src={tool}
                     alt="Technology"
-                    className="w-full h-full object-contain"
+                    fill
+                    className="object-contain"
                   />
                 </div>
               </div>

@@ -5,11 +5,7 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import mongodb from "./mongodb.png";
+// technology icons now served from /public/technologies
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
@@ -58,11 +54,7 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
-  vscode,
-  firebase,
-  figma,
-  git,
-  mongodb,
+  // technology images moved to /public/technologies
   right_arrow_white,
   logo,
   logo_dark,
@@ -218,9 +210,32 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
+  "/technologies/Python.png",
+  "/technologies/JavaScript.png",
+  "/technologies/C.png",
+  "/technologies/C++-(CPlusPlus).png",
+  "/technologies/Django.png",
+  "/technologies/Django-REST.png",
+  "/technologies/SQLAlchemy.png",
+  "/technologies/React.png",
+  "/technologies/Next.js.png",
+  "/technologies/Express.png",
+  "/technologies/Node.js.png",
+  "/technologies/Redux.png",
+  "/technologies/Flutter.png",
+  "/technologies/HTML5.png",
+  "/technologies/CSS3.png",
+  "/technologies/Tailwind-CSS.png",
+  "/technologies/Bootstrap.png",
+  "/technologies/PostgresSQL.png",
+  "/technologies/MySQL.png",
+  "/technologies/Redis.png",
+  "/technologies/AWS.png",
+  "/technologies/Digital-Ocean.png",
+  "/technologies/Git.png",
+  "/technologies/Github.png",
+  "/technologies/Docker.png",
+  "/technologies/Figma.png",
+  "/technologies/Swagger.png",
+  "/technologies/Ubuntu.png",
 ];
