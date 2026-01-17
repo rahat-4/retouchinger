@@ -36,7 +36,7 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import image_one from "./image_1.jpg";
-import img_one from "./img_one.jpg";
+import img_one from "./img_one.jpeg";
 import img_two from "./img_two.jpg";
 import img_three from "./img_three.jpg";
 import img_four from "./img_four.jpg";
@@ -92,24 +92,54 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "QOP CRM",
+    description:
+      "A secure web-based portal for managing mortgage enquiries and applications through the One Mortgage System platform.",
+    bgImage: "/qopcrm.png",
+    link: "https://qopcrm.com",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Afrobeutic",
+    description: "Salon management System that connects clients with salons.",
+    bgImage: "/afrobeutic.png",
+    link: "https://afrobeutic-frontend.vercel.app/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Chefbot CRM",
+    description:
+      "Restaurant management platform that handle automatic booking with AI Agent.",
+    bgImage: "/chefbot.png",
+    link: "https://crm.chef-bot.de/",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Supplers",
+    description: "Multi vendor e-commerce platform for furniture.",
+    bgImage: "/supplers.png",
+    link: "https://www.supplers.com/",
+  },
+  {
+    title: "Cardicheck",
+    description: "Telemedicine platform for cardiology patients.",
+    bgImage: "/cardicheck.png",
+    link: "https://cardicheck.vercel.app/en",
+  },
+  {
+    title: "Pharmik",
+    description: "Pharmacy management system for local pharmacies.",
+    bgImage: "/pharmik.png",
+    link: "https://www.pharmik.co/",
+  },
+  {
+    title: "ProHr",
+    description: "HR management system for small and medium businesses.",
+    bgImage: "/prohr.png",
+    link: "https://www.prohr.io/",
+  },
+  {
+    title: "Sebagriho",
+    description: "Healthcare management system for clinics and hospitals.",
+    bgImage: "/sebagriho.png",
+    link: "https://www.sebagriho.com/",
   },
 ];
 

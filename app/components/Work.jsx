@@ -45,11 +45,14 @@ const Work = ({ isDarkMode }) => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-6"
       >
         {workData.map((project, index) => (
-          <motion.div
+          <motion.a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -10 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className="aspect-square rounded-2xl cursor-pointer bg-cover bg-center bg-no-repeat relative group overflow-hidden shadow-lg"
+            className="aspect-square rounded-2xl cursor-pointer bg-contain bg-center bg-no-repeat relative group overflow-hidden shadow-lg"
             style={{ backgroundImage: `url(${project.bgImage})` }}
           >
             {/* Gradient Overlay */}
@@ -73,7 +76,7 @@ const Work = ({ isDarkMode }) => {
                 />
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </motion.div>
       <motion.a
