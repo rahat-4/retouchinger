@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
-import WhatWeOffer from "./components/Offer";
 import OurClients from "./components/Clients";
 import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
@@ -43,7 +42,6 @@ export default function Home() {
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Services isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Work isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <WhatWeOffer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <OurClients isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Technologies isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

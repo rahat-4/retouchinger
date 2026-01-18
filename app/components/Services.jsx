@@ -52,7 +52,7 @@ const Services = ({ isDarkMode }) => {
             className="border border-gray-200 dark:border-gray-700 rounded-2xl px-8 py-12 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-900 duration-500 cursor-pointer group"
           >
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Image src={icon} alt={title} className="w-8" />
+              <Image src={icon} alt={title} className="w-8" width={10} height={10} />
             </div>
             <h3 className="text-xl font-semibold my-4 text-gray-800 dark:text-white font-ovo">
               {title}

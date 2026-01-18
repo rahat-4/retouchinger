@@ -143,49 +143,42 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
+    icon: "/services/web.jpeg",
     title: "Web App Design & Development",
     description:
       "Design-driven web applications and progressive web apps with responsive layouts, performance optimization, and accessibility best practices.",
     link: "",
   },
   {
-    icon: assets.soft_icon ?? assets.web_icon,
+    icon: "/services/software.jpeg",
     title: "Custom Software Solutions",
     description:
       "Bespoke software and enterprise systems built to your requirements — scalable architectures, integrations, and long-term support.",
     link: "",
   },
   {
-    icon: assets.code_icon ?? assets.web_icon,
+    icon: "/services/ai.jpeg",
     title: "AI Agents & Chatbots",
     description:
       "Conversational AI, chatbots, and intelligent agents that automate interactions, provide support, and enhance user experiences.",
     link: "",
   },
   {
-    icon: assets.ui_icon ?? assets.web_icon,
+    icon: "/services/automation.jpeg",
     title: "Automation Tools & Workflows",
     description:
       "Custom workflow automation and integration tools that reduce manual work, connect systems, and increase operational efficiency.",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
+    icon: "/services/mobileapp.jpeg",
     title: "Mobile App Development",
     description:
       "Native and cross-platform mobile applications for iOS and Android — UI/UX design, app development, store submission, and ongoing maintenance.",
     link: "",
   },
-  // {
-  //   icon: assets.graphics_icon,
-  //   title: "Quality Assurance & Testing",
-  //   description:
-  //     "I ensure software reliability through testing, debugging, performance optimization, and code reviews to deliver high-quality applications.",
-  //   link: "",
-  // },
   {
-    icon: assets.graphics_icon,
+    icon: "/services/photo-edit.jpeg",
     title: "Photo Editing Services",
     description:
       "Professional photo retouching, color correction, background removal and image optimization for e-commerce, marketing, and editorial needs.",
