@@ -133,6 +133,12 @@ export const workData = [
     bgImage: "/work/sebagriho.png",
     link: "https://www.sebagriho.com/",
   },
+  {
+    title: "Penguin Random House",
+    description: "Leading global book publisher's online platform for book discovery and purchases.",
+    bgImage: "/work/penguin.png",
+    link: "https://www.penguinrandomhouse.com/",
+  }
 ];
 
 export const serviceData = [
