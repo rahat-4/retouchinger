@@ -9,24 +9,33 @@ const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
+
     const formData = new FormData(event.target);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
-    formData.append("access_key", "228c4d37-2221-467a-aa6b-f92202260a52");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+      const data = await res.json();
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-      setTimeout(() => setResult(""), 3000);
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      if (res.ok && data.success) {
+        setResult("Message sent successfully");
+        event.target.reset();
+        setTimeout(() => setResult(""), 3000);
+      } else {
+        setResult(data.message || "Failed to send message");
+      }
+    } catch (err) {
+      console.error(err);
+      setResult("Failed to send message");
     }
   };
 
