@@ -66,10 +66,7 @@ const OurClients = () => {
                            opacity-100
                            transition-all duration-300"
               >
-                <a
-                  href={client.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
                   className="w-full h-full bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-center p-2"
                 >
                   <Image
@@ -79,7 +76,7 @@ const OurClients = () => {
                     height={96}
                     className="object-contain"
                   />
-                </a>
+                </div>
               </div>
             ))}
           </motion.div>
