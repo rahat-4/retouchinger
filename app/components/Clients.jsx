@@ -4,35 +4,19 @@ import { motion } from "framer-motion";
 
 const OurClients = () => {
   const clientLogos = [
-    { name: "Acme Labs", website: "https://acmelabs.example", logo: "/clients/acme.svg" },
-    { name: "Nimbus Tech", website: "https://nimbustech.example", logo: "/clients/nimbus-tech.svg" },
-    { name: "BluePeak", website: "https://bluepeak.example", logo: "/clients/bluepeak.svg" },
-    { name: "Aurora Systems", website: "https://aurorasystems.example", logo: "/clients/aurora-systems.svg" },
-    { name: "Greenfield Media", website: "https://greenfield.example", logo: "/clients/greenfield-media.svg" },
-    { name: "Orbit AI", website: "https://orbitai.example", logo: "/clients/orbit-ai.svg" },
-    { name: "Helix Solutions", website: "https://helix.example", logo: "/clients/helix-solutions.svg" },
-    { name: "Pulse Studio", website: "https://pulsestudio.example", logo: "/clients/pulse-studio.svg" },
-    { name: "Cedar Commerce", website: "https://cedarcommerce.example", logo: "/clients/cedar-commerce.svg" },
-    { name: "Zenith Health", website: "https://zenithhealth.example", logo: "/clients/zenith-health.svg" },
-    { name: "Lumen Analytics", website: "https://lumen.example", logo: "/clients/lumen-analytics.svg" },
-    { name: "Echo Retail", website: "https://echoretail.example", logo: "/clients/echo-retail.svg" },
-    { name: "Vertex Logistics", website: "https://vertexlogistics.example", logo: "/clients/vertex-logistics.svg" },
-    { name: "Solace Finance", website: "https://solacefinance.example", logo: "/clients/solace-finance.svg" },
-    { name: "Nimbus Energy", website: "https://nimbusenergy.example", logo: "/clients/nimbus-energy.svg" },
-    { name: "Atlas Robotics", website: "https://atlasrobotics.example", logo: "/clients/atlas-robotics.svg" },
-    { name: "Coral Creative", website: "https://coralcreative.example", logo: "/clients/coral-creative.svg" },
+    { logo: "/clients/img_one.png", name: "Client One", website: "#" },
+    { logo: "/clients/img_two.png", name: "Client Two", website: "#" },
+    { logo: "/clients/img_three.png", name: "Client Three", website: "#" },
+    { logo: "/clients/img_four.png", name: "Client Four", website: "#" },
+    { logo: "/clients/img_five.png", name: "Client Five", website: "#" },
+    { logo: "/clients/img_six.png", name: "Client Six", website: "#" },
+    { logo: "/clients/img_seven.png", name: "Client Seven", website: "#" },
+    { logo: "/clients/img_eight.png", name: "Client Eight", website: "#" },
+    { logo: "/clients/img_nine.png", name: "Client Nine", website: "#" },
   ];
 
   // Duplicate ONCE (correct)
   const logos = [...clientLogos, ...clientLogos];
-
-  const getInitials = (name) =>
-    name
-      .split(" ")
-      .map((n) => n[0])
-      .join("")
-      .slice(0, 2)
-      .toUpperCase();
 
   const marqueeRef = useRef(null);
   const [width, setWidth] = useState(0);
@@ -79,25 +63,22 @@ const OurClients = () => {
               <div
                 key={index}
                 className="flex-shrink-0 w-32 h-20 sm:w-40 sm:h-24 lg:w-48 lg:h-28
-                           grayscale hover:grayscale-0 opacity-60 hover:opacity-100
+                           opacity-100
                            transition-all duration-300"
               >
                 <a
                   href={client.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-center"
+                  className="w-full h-full bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-center p-2"
                 >
-                  <div className="flex flex-col items-center justify-center">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center mb-2">
-                      <span className="text-gray-700 dark:text-gray-100 font-bold text-sm sm:text-base">
-                        {getInitials(client.name)}
-                      </span>
-                    </div>
-                    <span className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm font-medium">
-                      {client.name}
-                    </span>
-                  </div>
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    width={192}
+                    height={96}
+                    className="object-contain"
+                  />
                 </a>
               </div>
             ))}
