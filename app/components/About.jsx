@@ -60,15 +60,12 @@ const About = ({ isDarkMode }) => {
       >
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100 dark:border-gray-700">
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-ovo text-center">
-            We are a Software Engineering & Development company with a strong
-            background in full-stack web development. With years of experience
-            working with companies like Cloud Development & Data Analytics and
-            REPLIQ Limited, we have developed, deployed, and maintained complex
-            software solutions across various industries. From land trading
-            platforms to recruitment solutions, we ensure high-quality
-            development with best coding practices. Our goal is to create
-            impactful digital experiences and help businesses grow with
-            technology.
+            Retouchinger is a software company focused on building web applications,
+            mobile apps, and custom enterprise software. We also design and
+            implement AI agents & chatbots, automation tools and workflows, and
+            provide professional photo editing services. With experience across
+            multiple industries, we deliver production-ready solutions that are
+            secure, scalable, and tailored to business needs.
           </p>
         </div>
       </motion.div>

@@ -34,9 +34,9 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo text-gray-600 dark:text-gray-300"
       >
-        Welcome to our web development portfolio! Explore a collection of
-        projects showcasing our expertise in full-stack development and
-        innovative solutions.
+        Explore a collection of projects across Mobile App Development, Web
+        App Design & Development, Custom Software Solutions, AI agents &
+        chatbots, automation tools, and photo editing work.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}

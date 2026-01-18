@@ -11,6 +11,15 @@ const OurClients = () => {
     { name: "Client 6" },
     { name: "Client 7" },
     { name: "Client 8" },
+    { name: "Client 9" },
+    { name: "Client 10" },
+    { name: "Client 11" },
+    { name: "Client 12" },
+    { name: "Client 13" },
+    { name: "Client 14" },
+    { name: "Client 15" },
+    { name: "Client 16" },
+    { name: "Client 17" },
   ];
 
   // Duplicate ONCE (correct)
@@ -77,10 +86,10 @@ const OurClients = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-20">
           {[
-            { value: "50+", label: "Happy Clients" },
-            { value: "100+", label: "Projects Done" },
-            { value: "15+", label: "Team Members" },
-            { value: "5+", label: "Years Experience" },
+            { value: "17+", label: "Happy Clients" },
+            { value: "45+", label: "Projects Done" },
+            { value: "12+", label: "Team Members" },
+            { value: "8+", label: "Years Experience" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <div className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-2">

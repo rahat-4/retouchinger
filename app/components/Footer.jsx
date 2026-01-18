@@ -17,8 +17,9 @@ const Footer = ({ isDarkMode }) => {
               className="w-32 mb-4"
             />
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 font-ovo leading-relaxed">
-              Professional image retouching and editing services for businesses
-              and individuals worldwide.
+              We build Web & Mobile applications, custom software, AI agents
+              & chatbots, and automation tools — and provide professional photo
+              editing services to help businesses scale and market effectively.
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
               <Image

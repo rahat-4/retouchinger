@@ -34,10 +34,10 @@ const Services = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo text-gray-600 dark:text-gray-300"
       >
-        We offer custom web development solutions to help businesses grow with
-        technology. From full-stack development to API integration and database
-        optimization, we build scalable and efficient applications tailored to
-        your needs.
+        We provide Web App Design & Development, Custom Software Solutions,
+        AI Agents & Chatbots, Automation Tools & Workflows, Mobile App
+        Development, and Photo Editing Services — delivering production-ready
+        applications and media solutions tailored to your business goals.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}

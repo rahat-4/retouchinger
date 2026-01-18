@@ -5,44 +5,44 @@ import { motion } from "framer-motion";
 const WhatWeOffer = ({ isDarkMode }) => {
   const offerings = [
     {
-      title: "Web Development",
+      title: "Web App Design & Development",
       description:
-        "Custom web applications built with modern technologies like React, Next.js, and Django. We create scalable, performant solutions tailored to your business needs.",
+        "Design-driven web applications and progressive web apps with responsive layouts, performance optimization, and accessibility best practices.",
       image: "/whatweoffer/web.jpeg",
-      features: ["Responsive Design", "SEO Optimized", "Fast Performance"],
+      features: ["Responsive Design", "PWA", "Performance & SEO"],
     },
     {
-      title: "Mobile Development",
+      title: "Custom Software Solutions",
       description:
-        "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android platforms with cutting-edge technologies.",
-      image: "/whatweoffer/mobileapp.jpeg",
-      features: ["iOS & Android", "Cross-Platform", "Native Performance"],
-    },
-    {
-      title: "AI Solutions",
-      description:
-        "Intelligent automation and AI-powered solutions including chatbots, agents, and machine learning models to streamline your business processes.",
-      image: "/whatweoffer/ai.jpeg",
-      features: ["AI Agents", "Chatbots", "Machine Learning"],
-    },
-    {
-      title: "Software Development",
-      description:
-        "Custom software solutions and enterprise applications designed to solve complex business challenges with scalable, maintainable code.",
+        "Bespoke software and enterprise systems built to your requirements — scalable architectures, integrations, and long-term support.",
       image: "/whatweoffer/software.jpeg",
-      features: ["Custom Solutions", "Enterprise Apps", "API Integration"],
+      features: ["Scalable Architecture", "API Integration", "Maintenance"],
     },
     {
-      title: "Automation Services",
+      title: "AI Agents & Chatbots",
       description:
-        "Streamline your workflows with intelligent automation tools and scripts that reduce manual work and increase efficiency across your organization.",
+        "Conversational AI, chatbots, and intelligent agents that automate interactions, provide support, and enhance user experiences.",
+      image: "/whatweoffer/ai.jpeg",
+      features: ["Conversational AI", "NLP", "Automation"],
+    },
+    {
+      title: "Automation Tools & Workflows",
+      description:
+        "Custom workflow automation and integration tools that reduce manual work, connect systems, and increase operational efficiency.",
       image: "/whatweoffer/automation.jpeg",
-      features: ["Workflow Automation", "Process Optimization", "Integration"],
+      features: ["Workflow Automation", "Integrations", "Scheduled Jobs"],
     },
     {
-      title: "Photo Editing",
+      title: "Mobile App Development",
       description:
-        "Professional photo editing and retouching services for businesses and individuals, delivering high-quality results for all your image needs.",
+        "Native and cross-platform mobile applications for iOS and Android — UI/UX design, app development, store submission, and ongoing maintenance.",
+      image: "/whatweoffer/mobileapp.jpeg",
+      features: ["iOS & Android", "Cross-Platform", "App Store Deployment"],
+    },
+    {
+      title: "Photo Editing Services",
+      description:
+        "Professional photo retouching, color correction, background removal and image optimization for marketing and products.",
       image: "/whatweoffer/photo-edit.jpeg",
       features: ["Retouching", "Color Correction", "Background Removal"],
     },

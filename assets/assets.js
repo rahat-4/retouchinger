@@ -138,37 +138,37 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Custom Software Solutions",
+    title: "Web App Design & Development",
     description:
-      "I design and build custom software solutions such as business management systems, dashboards, and data-driven applications tailored to your specific needs.",
+      "Design-driven web applications and progressive web apps with responsive layouts, performance optimization, and accessibility best practices.",
     link: "",
   },
   {
-    icon: assets.web_icon,
-    title: "Web App Design & Development",
+    icon: assets.soft_icon ?? assets.web_icon,
+    title: "Custom Software Solutions",
     description:
-      "I develop modern, responsive, and scalable web applications using technologies like React, Next.js, and Django, focused on performance and user experience.",
+      "Bespoke software and enterprise systems built to your requirements — scalable architectures, integrations, and long-term support.",
+    link: "",
+  },
+  {
+    icon: assets.code_icon ?? assets.web_icon,
+    title: "AI Agents & Chatbots",
+    description:
+      "Conversational AI, chatbots, and intelligent agents that automate interactions, provide support, and enhance user experiences.",
+    link: "",
+  },
+  {
+    icon: assets.ui_icon ?? assets.web_icon,
+    title: "Automation Tools & Workflows",
+    description:
+      "Custom workflow automation and integration tools that reduce manual work, connect systems, and increase operational efficiency.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
     title: "Mobile App Development",
     description:
-      "I create high-performance mobile applications with clean UI and smooth user experience, ensuring reliability, scalability, and security.",
-    link: "",
-  },
-  {
-    icon: assets.ai_icon ?? assets.web_icon,
-    title: "AI Agents & Chatbots",
-    description:
-      "I build intelligent AI agents and chatbots for customer support, lead generation, and internal automation using modern AI and NLP technologies.",
-    link: "",
-  },
-  {
-    icon: assets.automation_icon ?? assets.web_icon,
-    title: "Automation Tools & Workflows",
-    description:
-      "I develop automation tools to streamline business processes, reduce manual work, and improve efficiency using APIs, AI, and custom scripts.",
+      "Native and cross-platform mobile applications for iOS and Android — UI/UX design, app development, store submission, and ongoing maintenance.",
     link: "",
   },
   // {
@@ -182,7 +182,7 @@ export const serviceData = [
     icon: assets.graphics_icon,
     title: "Photo Editing Services",
     description:
-      "I develop dynamic, responsive, and scalable web applications using Django, React, and Next.js.",
+      "Professional photo retouching, color correction, background removal and image optimization for e-commerce, marketing, and editorial needs.",
     link: "",
   },
 ];

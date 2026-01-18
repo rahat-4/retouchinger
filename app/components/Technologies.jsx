@@ -79,7 +79,7 @@ const Technologies = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto">
           {[
-            { value: "15+", label: "Technologies" },
+            { value: "28+", label: "Technologies" },
             { value: "100%", label: "Modern Stack" },
             { value: "24/7", label: "Support" },
             { value: "99.9%", label: "Uptime" },

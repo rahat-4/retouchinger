@@ -14,15 +14,14 @@ const getOvo = Ovo({
 export const metadata = {
   title: "Retouchinger - Software Development Agency",
   description:
-    "Retouchinger is a Software Engineering & Development company specializing in full-stack web development, delivering high-quality solutions to help businesses grow with technology.",
+    "Retouchinger provides Mobile App Development, Web App Design & Development, Custom Software Solutions, AI Agents & Chatbots, Automation Tools & Workflows, and Photo Editing Services.",
   keywords: [
-    "software development",
-    "web development",
-    "full-stack development",
-    "React",
-    "Next.js",
-    "Django",
-    "Python",
+    "mobile app development",
+    "web app design",
+    "custom software",
+    "AI chatbots",
+    "automation",
+    "photo editing",
     "software agency",
   ],
   authors: [{ name: "Retouchinger" }],
@@ -33,14 +32,14 @@ export const metadata = {
     url: "https://retouchinger.com",
     title: "Retouchinger - Software Development Agency",
     description:
-      "Full-stack web development solutions to help businesses grow with technology.",
+      "Mobile apps, web apps, custom software, AI agents, automation tools, and professional photo editing services.",
     siteName: "Retouchinger",
   },
   twitter: {
     card: "summary_large_image",
     title: "Retouchinger - Software Development Agency",
     description:
-      "Full-stack web development solutions to help businesses grow with technology.",
+      "Mobile apps, web apps, custom software, AI agents, automation tools, and professional photo editing services.",
   },
 };
 

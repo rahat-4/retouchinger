@@ -6,11 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 const Header = () => {
   // Changeable sentences for the left column
   const sentences = [
-    "Building Custom Software Solutions",
-    "Transforming Ideas Into Digital Products",
-    "Empowering Businesses With Smart Technology",
-    "Web & Mobile Solutions That Scale",
-    "Your Vision, Our Digital Expertise",
+    "Web App Design & Development",
+    "Custom Software Solutions",
+    "AI Agents & Chatbots",
+    "Automation Tools & Workflows",
+    "Mobile App Development",
+    "Photo Editing Services",
   ];
 
   // Carousel images for the right column
@@ -97,12 +98,9 @@ const Header = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-base sm:text-lg text-gray-600 dark:text-gray-300 font-ovo max-w-xl mx-auto lg:mx-0"
               >
-                We're a passionate team delivering end-to-end digital solutions,
-                from custom software and web applications to mobile apps,
-                quality assurance, and professional photo editing services.
-                Whether you're launching a new product or enhancing an existing
-                one, we help bring your ideas to life with precision and
-                creativity. 🚀
+                We provide Web App Design & Development, Custom Software Solutions, AI Agents & Chatbots,
+                Automation Tools & Workflows, Mobile App Development, and Photo Editing Services to
+                help businesses launch and scale digital products.
               </motion.p>
             </div>
           </motion.div>
