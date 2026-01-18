@@ -80,6 +80,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </li>
           <li>
             <a
+              href="#whatweoffer"
+              className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              What We Offer
+            </a>
+          </li>
+          <li>
+            <a
               href="#about"
               className="font-ovo hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
@@ -175,6 +183,15 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               onClick={closeMenu}
             >
               Our Work
+            </a>
+          </li>
+          <li>
+            <a
+              href="#whatweoffer"
+              className="font-ovo text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              onClick={closeMenu}
+            >
+              What We Offer
             </a>
           </li>
           <li>

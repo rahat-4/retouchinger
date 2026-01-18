@@ -49,7 +49,7 @@ const WhatWeOffer = ({ isDarkMode }) => {
   ];
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-20 w-full">
+    <div id="whatweoffer" className="px-4 sm:px-6 lg:px-8 py-20 scroll-mt-20 w-full">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
